@@ -6,4 +6,5 @@ public class Main {
         // и тут же запускаем цикл чтения/печати
         new Calc(new InputStreamReader(System.in)).run();
     }
+
 }

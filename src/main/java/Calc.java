@@ -42,7 +42,7 @@ public void ParsingAndCalculate(string str){
                     if (intermed != 0) {
                         return argum1=argum1 / intermed;
                     }
-                    
+
                     else {
                         System.out.println("Деление на ноль невозможно!");
                       break;
