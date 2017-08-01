@@ -1,16 +1,17 @@
-package com.company
+package com.company;
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Scanner;
 
 public class ConsoleCalc {
     Calc calc= new Calc ();
     double frst = 0;
     double scnd = 0;
-    String sign = '';
-    double res=0;
+    String sign = "";
+    double res = 0;
 
-    BufferedReader reader= new Bufferedreader (new InputStreamReader (System.in));
+    BufferedReader reader= new BufferedReader (new InputStreamReader(System.in));
     try {
         frst =Double.parseDouble(reader.readLine());
         scnd=Double.parseDouble(reader.readLine());
