@@ -1,6 +1,6 @@
-package com.company;
+package com.calc;
 
-public  class Calc {
+public class Calc {
     public double plus (double frst, double scnd){
         return frst+scnd;
     }

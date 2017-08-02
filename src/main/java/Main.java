@@ -1,4 +1,4 @@
-package com.company;
+package com.calc;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -14,13 +14,13 @@ public class ConsoleCalc {
     BufferedReader reader= new BufferedReader (new InputStreamReader(System.in));
     try {
         System.out.println("Введите первое число");
-        frst =Double.parseDouble(reader.readLine());
+        frst = Double.parseDouble(reader.readLine());
         System.out.println("Введите знак операции");
-        sign= reader.readLine()
+        sign = reader.readLine()
         System.out.println("Введите второе число");
-        scnd=Double.parseDouble(reader.readLine());
+        scnd = Double.parseDouble(reader.readLine());
 
-    } catch (NumberFormatException e) {
+      } catch (NumberFormatException e) {
         e.printStackTrace();
     } catch (IOException e) {
         e.printStackTrace();
