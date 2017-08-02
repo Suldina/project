@@ -13,9 +13,13 @@ public class ConsoleCalc {
 
     BufferedReader reader= new BufferedReader (new InputStreamReader(System.in));
     try {
+        System.out.println("Введите первое число");
         frst =Double.parseDouble(reader.readLine());
+        System.out.println("Введите знак операции");
+        sign= reader.readLine()
+        System.out.println("Введите второе число");
         scnd=Double.parseDouble(reader.readLine());
-        sign= reader.readLine();
+
     } catch (NumberFormatException e) {
         e.printStackTrace();
     } catch (IOException e) {
