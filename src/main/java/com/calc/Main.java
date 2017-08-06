@@ -4,14 +4,17 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Scanner;
 
-public class ConsoleCalc {
-    Calc calc= new Calc ();
+public class Main {
+    Calc plus = new Plus();
+    Calc minus = new Minus();
+    Calc multiply = new Multiply();
+    Calc div = new Div();
     double frst = 0;
     double scnd = 0;
     String sign = "";
     double res = 0;
 
-    BufferedReader reader= new BufferedReader (new InputStreamReader(System.in));
+    BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
     try {
         System.out.println("Введите первое число");
         frst = Double.parseDouble(reader.readLine());
@@ -20,23 +23,32 @@ public class ConsoleCalc {
         System.out.println("Введите второе число");
         scnd = Double.parseDouble(reader.readLine());
 
-      } catch (NumberFormatException e) {
+    } catch(
+    NumberFormatException e)
+
+    {
         e.printStackTrace();
-    } catch (IOException e) {
+    } catch(
+    IOException e)
+
+    {
         e.printStackTrace();
     }
-    switch (sign) {
+    switch(sign)
+
+    {
         case "+":
-            res=calc.plus (frst, scnd);
+            res = Plus.calculate(frst, scnd);
             break;
         case "-":
-            res=calc.minus (frst, scnd);
+            res = Minus.calculate(frst, scnd);
             break;
         case "*":
-            res=calc.multiply (frst, scnd);
+            res = Multiply.calculate(frst, scnd);
             break;
         case "/":
-            res=calc.div (frst, scnd);
+            res = Div.calculate(frst, scnd);
             break;
 
     }
+}
