@@ -16,11 +16,11 @@ public class Main {
 
     BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
     try {
-        System.out.println("Введите первое число");
+        System.out.println("Please enter first argument");
         frst = Double.parseDouble(reader.readLine());
-        System.out.println("Введите знак операции");
-        sign = reader.readLine()
-        System.out.println("Введите второе число");
+        System.out.println("enter sign of operation");
+        sign = reader.readLine();
+        System.out.println("enter second argument");
         scnd = Double.parseDouble(reader.readLine());
 
     } catch(
@@ -34,9 +34,7 @@ public class Main {
     {
         e.printStackTrace();
     }
-    switch(sign)
-
-    {
+    switch(sign)    {
         case "+":
             res = Plus.calculate(frst, scnd);
             break;
