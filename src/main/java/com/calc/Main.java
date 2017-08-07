@@ -23,13 +23,10 @@ public class Main {
         System.out.println("enter second argument");
         scnd = Double.parseDouble(reader.readLine());
 
-    } catch(
-    NumberFormatException e)
+    } catch(NumberFormatException e)
 
-    {
-        e.printStackTrace();
-    } catch(
-    IOException e)
+    {  e.printStackTrace();
+    } catch(IOException e)
 
     {
         e.printStackTrace();
